@@ -1,0 +1,50 @@
+/**************************************************
+  Elements: Backgrounds
+
+  Overrides most of the background elements
+  for Discord. In the individual themes, some
+  of these elements will be moved to the
+  component to which they belong.
+ **************************************************/
+
+// Overall Application
+div[class*=appMount-], div[class*=container-],
+.guilds-wrapper, .guilds-wrapper .guilds .guild .guild-inner,
+.search-bar .search-bar-inner,
+.private-channels .channel.selected a, .private-channels .channel a:hover, .private-channels .channel:hover a,
+div[class*=contentSelectedText-], div[class*=contentHoveredText-], /* text channels */
+div[class*=contentHoveredVoice-], div[class*=contentSelectedVoice-], div[class*=contentHoveredVoice-]:active, div[class*=contentSelectedVoice-]:active, /* voice channels */
+#friends, .chat .divider:before, .chat .divider>span, .mention, .typing,
+.search-results-wrap, .channel-members .member.popout-open, .channel-members .member:hover,
+.search-bar, .search-bar.search-bar-light .search-bar-inner {
+  background: none;
+}
+
+// Nested Elements
+.theme-dark, .theme-light {
+  .layer, .layers,
+  #friends .friends-table .friends-row:hover,
+  .chat, div[class*=title-], .search .search-bar, .chat>.content, .messages-wrapper, .messages-wrapper .messages .divider:before,
+  .chat form, div[class*=inner-],
+  div[class*=headerBar-], .friends-table, .friends-table .messages .divider:before,
+  .ui-standard-sidebar-view, .ui-standard-sidebar-view .sidebar-region, .ui-standard-sidebar-view .content-region /* admin */ {
+    background: none;
+  }
+}
+
+// Dark Theme Nested Elements
+.theme-dark {
+  .messages-wrapper .messages .divider span, .chat form .typing,
+  #friends, .friends-table .messages .divider span,
+  .channel-members, .search-results-wrap, .search-results-wrap .search-header,
+  .channel-members .member.popout-open, .channel-members .member:hover {
+    background: none;
+  }
+}
+
+// Custom Background
+div[class*=appMount-], div[class*=backdrop-] {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

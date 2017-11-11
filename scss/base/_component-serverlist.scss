@@ -1,0 +1,112 @@
+/**************************************************
+  Component: Default 1-Column Server List
+ **************************************************/
+
+.guilds-wrapper {
+  width: $size-guild + 30px;
+
+  .scroller-wrap {
+    width: $size-guild + 50px;
+  }
+
+  .guild-separator {
+    width: $size-guild + 10px;
+  }
+
+  // Overriding the default width and height in one go.
+  .guilds .guild, .guilds .guild .avatar-small, .guilds .guild .guild-inner a, .guilds-error {
+    line-height: $size-guild;
+    width: $size-guild;
+    height: $size-guild;
+  }
+
+  .guilds {
+    padding: 10px;
+
+    .friends-online {
+      display: none;
+    }
+
+    .dms {
+      margin-top: 0;
+
+      .guild .guild-inner {
+        box-shadow: $boxshadow-guild rgba($white,.8);
+      }
+    }
+
+    .guild {
+      width: $size-guild + 4px;
+      height: $size-guild + 4px;
+      padding: 3px;
+
+      +.guild {
+        margin-top: 1px !important;
+      }
+
+      &.guilds-add {
+        margin: 6px 5px 5px 5px;
+        padding: 0 !important;
+        height: $size-guild;
+        width: $size-guild;
+      }
+
+      &:before {
+        display: none !important;
+      }
+
+      &.unread {
+        .guild-inner {
+          border: $border-guild transparent;
+          border-radius: $size-guild !important;
+          box-shadow: $boxshadow-guild rgba($white,.8);
+        }
+      }
+
+      &.selected {
+        .guild-inner {
+          border: $border-guild rgba($white, 1);
+          border-radius: $size-guild !important;
+          box-shadow: $boxshadow-guild rgba($white,1);
+        }
+      }
+
+      .guild-inner {
+        background: none;
+        background-clip: content-box;
+        background-origin: content-box;
+        background-size: contain;
+        border: $border-guild transparent;
+        border-radius: $size-guild !important;
+        box-sizing: border-box !important;
+        transition: border .25s ease-in-out, box-shadow .25s ease-in-out;
+        transition-delay: 0s;
+      }
+
+      .avatar-small {
+        background-clip: content-box;
+        background-origin: content-box;
+        background-size: contain;
+      }
+
+      .friends-icon {
+        background-size: 25px 30px;
+        height: $size-guild;
+        width: $size-guild;
+      }
+
+      &.audio .guild-inner:after, &.video .guild-inner:after {
+        background-size: 12px;
+        height: 16px;
+        right: 0;
+        top: 0;
+        width: 16px;
+      }
+
+      .badge {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

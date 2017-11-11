@@ -1,0 +1,34 @@
+/**************************************************
+  Component: Channels
+ **************************************************/
+
+.channels-3g2vYe {
+  background: rgba($bg-channel,0.9);
+
+  // Unread Channels
+  .unread-2TDDFN {
+    background: rgba($channel-unread-bg,0.9);
+
+    &:hover {
+      background: rgba($channel-unread-bg,1);
+    }
+
+    div[class*=bar-], div[class*=icon-] {
+      color: $channel-unread-text;
+    }
+  }
+
+  // RTC Connection Area
+  .container-iksrDt {
+    background: linear-gradient(to bottom, rgba($accent-rtc-connection, 0) 0%, rgba($accent-rtc-connection, 0.9) 100%) !important;
+  }
+
+  // Channel Select / Hover
+  .channel.selected, div[class*=wrapperSelectedText-], div[class*=wrapperHoveredVoice-]:active, div[class*=wrapperSelectedVoice-]:active {
+    @include gradient-select($accent-channel-list,1);
+  }
+
+  .channel:hover, div[class*=wrapperHoveredText-], div[class*=wrapperHoveredVoice-], div[class*=userHovered-] {
+    @include gradient-select($accent-channel-list,.7);
+  }
+}

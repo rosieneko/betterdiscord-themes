@@ -1,0 +1,170 @@
+/**************************************************
+  Theme: Main Light Theme Replacement
+  Credits: Rosie (me@rosie.moe)
+  https://github.com/rosieneko/betterdiscord-themes
+ **************************************************/
+/**************************************************
+  Elements: Core
+ **************************************************/
+div[class*=typeWindows-] {
+  background: rgba(125, 134, 166, 0.9); }
+
+.scroller-wrap .scroller::-webkit-scrollbar-thumb, div[class*=scrollerWrap-] .scroller::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2) !important; }
+
+.search-results-wrap {
+  background: rgba(243, 243, 243, 0.9) !important; }
+  .search-results-wrap .channel-separator .channel-name {
+    text-shadow: -1px -1px 0 #f3f3f3, 1px -1px 0 #f3f3f3, -1px 1px 0 #f3f3f3, 1px 1px 0 #f3f3f3; }
+  .search-results-wrap .search-result.expanded .search-result-message.before, .search-results-wrap .search-result.expanded .search-result-message.after {
+    background: rgba(255, 255, 255, 0.3); }
+
+/**************************************************
+  Elements: Modals
+
+  Targets the modal overlays that Discord uses for
+  various items, such as adding game connections,
+  or viewing larger images.
+ **************************************************/
+.detected-platform-accounts-modal {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 1em; }
+  .detected-platform-accounts-modal .body {
+    color: #737f8d; }
+    .detected-platform-accounts-modal .body strong {
+      color: #4f545c; }
+  .detected-platform-accounts-modal .detected-account-details h3 {
+    color: #4f545c !important; }
+  .detected-platform-accounts-modal .detected-account-details h4 {
+    color: #737f8d !important; }
+  .detected-platform-accounts-modal .input-switch .input-switch-slider {
+    background: #737f8d; }
+  .detected-platform-accounts-modal .divider {
+    background: rgba(79, 84, 92, 0.5); }
+  .detected-platform-accounts-modal .btn-group .btn-default {
+    color: #737f8d; }
+  .detected-platform-accounts-modal .privacy {
+    background: rgba(255, 255, 255, 0.8);
+    color: #4f545c;
+    padding: .5em;
+    border-radius: 10px; }
+
+/**************************************************
+  Component: Server List
+ **************************************************/
+.guilds-wrapper {
+  background: rgba(30, 33, 36, 0.9); }
+  .guilds-wrapper .guild-separator:after {
+    background: #1e2124; }
+
+/**************************************************
+  Component: Channels
+ **************************************************/
+.channels-3g2vYe {
+  background: rgba(42, 44, 49, 0.9); }
+  .channels-3g2vYe .unread-2TDDFN {
+    background: rgba(115, 127, 141, 0.9); }
+    .channels-3g2vYe .unread-2TDDFN:hover {
+      background: #737f8d; }
+    .channels-3g2vYe .unread-2TDDFN div[class*=bar-], .channels-3g2vYe .unread-2TDDFN div[class*=icon-] {
+      color: #ffffff; }
+  .channels-3g2vYe .container-iksrDt {
+    background: linear-gradient(to bottom, rgba(30, 33, 36, 0) 0%, rgba(30, 33, 36, 0.9) 100%) !important; }
+  .channels-3g2vYe .channel.selected, .channels-3g2vYe div[class*=wrapperSelectedText-], .channels-3g2vYe div[class*=wrapperHoveredVoice-]:active, .channels-3g2vYe div[class*=wrapperSelectedVoice-]:active {
+    background: linear-gradient(to right, #1e2124 0%, rgba(30, 33, 36, 0) 100%) !important; }
+  .channels-3g2vYe .channel:hover, .channels-3g2vYe div[class*=wrapperHoveredText-], .channels-3g2vYe div[class*=wrapperHoveredVoice-], .channels-3g2vYe div[class*=userHovered-] {
+    background: linear-gradient(to right, rgba(30, 33, 36, 0.7) 0%, rgba(30, 33, 36, 0) 100%) !important; }
+
+/**************************************************
+  Component: Chat
+ **************************************************/
+.content .flex-spacer, #friends {
+  background: rgba(255, 255, 255, 0.9) !important; }
+
+.theme-dark #friends .friends-table .friends-row:hover, .theme-light #friends .friends-table .friends-row:hover {
+  background: rgba(255, 255, 255, 0.7) !important; }
+
+.chat div[class*=title-], .chat .titleCall-3X0yGQ {
+  background: rgba(255, 255, 255, 0.9) !important; }
+.chat .theme-dark .titleCall-3X0yGQ {
+  background: rgba(0, 0, 0, 0.9) !important; }
+.chat .new-messages-bar {
+  background: rgba(114, 137, 218, 0.9); }
+  .chat .new-messages-bar:hover {
+    background: #7289da; }
+  .chat .new-messages-bar button {
+    color: #ffffff; }
+    .chat .new-messages-bar button:last-child {
+      color: #c9d2f0; }
+      .chat .new-messages-bar button:last-child:hover {
+        color: #ffffff; }
+.chat .jump-to-present-bar {
+  background: rgba(115, 127, 141, 0.9); }
+  .chat .jump-to-present-bar:hover {
+    background: #737f8d; }
+  .chat .jump-to-present-bar button {
+    color: #ffffff; }
+    .chat .jump-to-present-bar button:last-child {
+      color: #c9d2f0; }
+      .chat .jump-to-present-bar button:last-child:hover {
+        color: #ffffff; }
+
+.inner-3if5cm {
+  background: rgba(255, 255, 255, 0.5) !important; }
+
+div[class*=nsfw-] {
+  background: rgba(255, 255, 255, 0.9); }
+
+.private-channel-call {
+  background: rgba(243, 243, 243, 0.9) !important; }
+
+.search .search-bar {
+  background: rgba(255, 255, 255, 0.1) !important; }
+
+/**************************************************
+  Component: Activity Feed
+ **************************************************/
+.theme-dark .activityFeed-HeiGwL, .theme-light .activityFeed-HeiGwL {
+  background: rgba(255, 255, 255, 0.9); }
+.theme-dark .header-34ZDfM, .theme-light .header-34ZDfM {
+  background: rgba(243, 243, 243, 0.9); }
+.theme-dark .body-2WmNzl, .theme-light .body-2WmNzl {
+  background: rgba(255, 255, 255, 0.9); }
+
+/**************************************************
+  Components: User List Selection
+ **************************************************/
+.channel-members {
+  background: rgba(243, 243, 243, 0.9) !important; }
+  .channel-members .member.popout-open {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%) !important; }
+  .channel-members .member:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%) !important; }
+  .channel-members h2 {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%) !important; }
+
+/**************************************************
+  Component: Admin Panel
+ **************************************************/
+.ui-standard-sidebar-view .sidebar-region {
+  background: rgba(243, 243, 243, 0.9) !important; }
+.ui-standard-sidebar-view .content-region {
+  background: rgba(255, 255, 255, 0.9) !important; }
+.ui-standard-sidebar-view div[class*=cardPrimary-] {
+  background: rgba(243, 243, 243, 0.6) !important; }
+.ui-standard-sidebar-view div[class*=cardPrimaryOutline-] {
+  background: rgba(255, 255, 255, 0.6) !important; }
+
+/**************************************************
+  Component: BetterDiscord Admin
+
+  Fixes some key elements of the BetterDiscord
+  admin pages.
+ **************************************************/
+#bd-settingspane-container h2.ui-form-title {
+  color: #4f545c !important; }
+#bd-settingspane-container .ui-switch-item h3 {
+  color: #737f8d !important; }
+
+/*# sourceMappingURL=theme-main-light.css.map */

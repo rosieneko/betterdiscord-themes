@@ -1,0 +1,19 @@
+/**************************************************
+  Theme: Main Dark Theme Replacement
+  Credits: Rosie (me@rosie.moe)
+  https://github.com/rosieneko/betterdiscord-themes
+ **************************************************/
+
+@import 'mixins/_mixins';
+@import 'variables/_base';
+@import 'variables/_main-dark';
+@import 'templates/_elements-core';
+@import 'templates/_elements-modals';
+@import 'templates/_component-serverlist';
+@import 'templates/_component-channels';
+@import 'templates/_component-chat';
+@import 'templates/_component-activityfeed';
+@import 'templates/_component-userlist';
+// @import 'templates/_component-userinfo';
+@import 'templates/_component-admin';
+@import 'templates/_component-bd';

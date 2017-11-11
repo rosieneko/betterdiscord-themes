@@ -1,0 +1,13 @@
+/**************************************************
+  Component: Server List
+ **************************************************/
+
+.guilds-wrapper {
+  background: rgba($guild-bg,0.9);
+
+  .guild-separator {
+    &:after {
+      background: $guild-separator-accent;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+/**************************************************
+  Elements: Core
+ **************************************************/
+
+// Discord Window Title Bar
+div[class*=typeWindows-] {
+  height: 30px;
+  margin: 0;
+
+  div[class*=wordmark-] {
+    padding: 7px 8px;
+  }
+
+  div[class*=winButton-] {
+    height: 12px;
+    padding: 9px 26px;
+    top: inherit;
+    width: 12px;
+  }
+}
+
+// Base
+div[class*=base-] {
+  border-radius: 0;
+}
+
+// Scrollbars
+div[class*=scroller] {
+  &::-webkit-scrollbar {
+    width: 12px !important;
+
+    div[class*=channels-] & {
+      width: 10px !important;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 3px solid transparent !important;
+    border-radius: 10px !important;
+    background-clip: content-box !important;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    border: 3px solid transparent !important;
+    background: none !important;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none !important;
+  }
+}
+
+// Top Bar Notifications
+.notice {
+  background: rgba($notice,.8);
+  border-radius: 0;
+
+  &.notice-streamer-mode {
+    background: rgba($notice-streamer,.8);
+  }
+
+  &.notice-facebook {
+    background: rgba($notice-facebook,.8);
+  }
+}
+
+// Search Results
+.search-results-wrap {
+  .channel-separator {
+    .channel-name {
+      background: none !important;
+    }
+  }
+
+  .search-result {
+    &:before, &:after, .search-result-message.hit {
+      background: none !important;
+    }
+
+    &:not(.expanded) {
+      .search-result-message {
+        &.before, &.after {
+          opacity: .5;
+        }
+      }
+    }
+  }
+}

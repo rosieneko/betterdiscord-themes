@@ -1,0 +1,21 @@
+/**************************************************
+  Components: User List Selection
+ **************************************************/
+
+.channel-members {
+  background: rgba($bg-sidebar,0.9) !important;
+
+  .member {
+    &.popout-open {
+      @include gradient-select($accent-user-list,1);
+    }
+
+    &:hover {
+      @include gradient-select($accent-user-list,.7);
+    }
+  }
+
+  h2 {
+    @include gradient-select($accent-user-list,1);
+  }
+}

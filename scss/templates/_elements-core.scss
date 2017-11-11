@@ -1,0 +1,40 @@
+/**************************************************
+  Elements: Core
+ **************************************************/
+
+// Discord Bar
+div[class*=typeWindows-] {
+  background: rgba($bg-discord-bar,.9);
+}
+
+// Scrollbars
+.scroller-wrap .scroller, div[class*=scrollerWrap-] .scroller {
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($accent-scrollbar,0.2) !important;
+  }
+}
+
+// Search Results
+.search-results-wrap {
+  background: rgba($bg-sidebar,0.9) !important;
+
+  .channel-separator {
+    .channel-name {
+      text-shadow:
+              -1px -1px 0 $text-shadow-sidebar,
+              1px -1px 0 $text-shadow-sidebar,
+              -1px 1px 0 $text-shadow-sidebar,
+              1px 1px 0 $text-shadow-sidebar;
+    }
+  }
+
+  .search-result {
+    &.expanded {
+      .search-result-message {
+        &.before, &.after {
+          background: rgba($bg-chat,.3);
+        }
+      }
+    }
+  }
+}

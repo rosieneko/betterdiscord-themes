@@ -1,0 +1,21 @@
+/**************************************************
+  Component: Admin Panel
+ **************************************************/
+
+.ui-standard-sidebar-view {
+  .sidebar-region {
+    background: rgba($bg-sidebar, 0.9) !important;
+  }
+
+  .content-region {
+    background: rgba($bg-chat,0.9) !important;
+  }
+
+  div[class*=cardPrimary-] {
+    background: rgba($bg-card,.6) !important;
+  }
+
+  div[class*=cardPrimaryOutline-] {
+    background: rgba($bg-card-2,.6) !important;
+  }
+}

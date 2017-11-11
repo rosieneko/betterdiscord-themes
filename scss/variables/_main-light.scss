@@ -1,0 +1,115 @@
+// Base Theme Colors
+// For general colors used that are not in the default base variables file, and specific to this particular theme.
+$grey: #737f8d; // regular grey text
+$grey-dark: #4f545c;
+$bg-grey-dark: #2a2c31;
+$bg-grey-dark-2: #1e2124;
+$bg-grey-light:#f3f3f3;
+
+$white-off: #f6f6f7; // selected text in side areas
+$grey-secondary: #72767d; // main text in side areas
+$grey-light: #dcddde; // unread text in side areas
+$grey-light-2: #b9bbbe; // hover text in side areas
+
+// Elements: Core
+$bg-discord-bar: desaturate(darken($discord-blue,8%),40%);
+
+
+// Elements: General Text
+$text-h2: $grey-dark;
+$text-h3: $grey-dark;
+$text-h4: $grey;
+
+$text-main: $grey;
+$text-secondary: $grey-dark;
+$text-strong: $grey-dark;
+
+
+// Elements: General Text
+$accent-scrollbar: $black;
+$accent-divider: $grey-dark;
+$accent-input-inactive: $grey;
+$accent-text-input: $white;
+
+
+// Component: Modals
+$bg-modal: $white;
+$bg-privacy: $white;
+
+
+// Component: Server List
+$guild-bg: $bg-grey-dark-2;
+$guild-separator-accent: $bg-grey-dark-2;
+
+
+// Component: Channels
+$bg-channel: $bg-grey-dark;
+$channel-unread-bg: $grey;
+$channel-unread-text: $white;
+$accent-channel-list: $bg-grey-dark-2;
+$accent-rtc-connection: $bg-grey-dark-2;
+
+
+// Component: Chat
+$search-bar-bg: $white;
+$bg-chat: $white;
+$chat-new-bg: $discord-blue;
+$chat-new-text: $white;
+$chat-new-text-action: #c9d2f0;
+$chat-new-text-action-hover: $white;
+$chat-jump-bg: $grey;
+$chat-jump-text: $white;
+$chat-jump-text-action: #c9d2f0;
+$chat-jump-text-action-hover: $white;
+$accent-chat-text-input: $white;
+
+$bg-private-call: $bg-grey-light;
+$bg-private-call-title-dark: $black;
+
+
+// Component: Friends List
+$friends-hover-bg: $white;
+
+
+// Component: Activity Feed
+$feed-main-bg: $white;
+$feed-activity-header-bg: $bg-grey-light;
+$feed-activity-body-bg: $white;
+
+
+// Component: User List / Sidebar
+$bg-sidebar: $bg-grey-light;
+$accent-user-list: $white;
+$text-shadow-sidebar: $bg-grey-light;
+
+
+// Component: User Info Popups
+$bg-user-header: #7289da;
+$bg-user-body: $bg-grey-light;
+$bg-user-footer: $white;
+
+$bg-popout: $white;
+$bg-profile: $white;
+
+$accent-role-border: $grey-light;
+$text-role: $grey;
+
+$accent-user-header-icon: $grey-secondary;
+$accent-user-header-text: $grey-secondary;
+$accent-user-notes: #87909c;
+$accent-user-notes-focus: $white;
+
+$accent-quick-message-input: $white;
+$accent-quick-message-border: #e0e5e8;
+$accent-quick-message-text: $grey;
+
+$text-protip: #99aab5;
+
+$accent-popout-hover: $white;
+$accent-popout-message-border: $grey;
+$accent-profile-guild-list: $white;
+
+
+// Component: Admin Panel
+$bg-card: $bg-grey-light;
+$bg-card-2: $white;

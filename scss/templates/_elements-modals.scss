@@ -1,0 +1,54 @@
+/**************************************************
+  Elements: Modals
+
+  Targets the modal overlays that Discord uses for
+  various items, such as adding game connections,
+  or viewing larger images.
+ **************************************************/
+
+.detected-platform-accounts-modal {
+  background: rgba($bg-modal,.8);
+  border-radius: $radius-modal;
+  padding: 1em;
+
+  .body {
+    color: $text-main;
+
+    strong {
+      color: $text-strong;
+    }
+  }
+
+  .detected-account-details {
+    h3 {
+      color: $text-h3 !important;
+    }
+
+    h4 {
+      color: $text-h4 !important;
+    }
+  }
+
+  .input-switch {
+    .input-switch-slider {
+      background: $accent-input-inactive;
+    }
+  }
+
+  .divider {
+    background: rgba($accent-divider,.5);
+  }
+
+  .btn-group {
+    .btn-default {
+      color: $text-main;
+    }
+  }
+
+  .privacy {
+    background: rgba($bg-privacy,.8);
+    color: $text-secondary;
+    padding: .5em;
+    border-radius: $radius-modal;
+  }
+}

@@ -1,0 +1,73 @@
+// Regular Popout
+div[class^=userPopout-] {
+  div[class^=headerNormal-] {
+    background: rgba($bg-user-header,.9);
+    background-size: auto;
+  }
+
+  div[class^=body-] {
+    background: rgba($bg-user-body,.9);
+
+    div[class^=bodyTitleIconForeground-] {
+      fill: $accent-user-header-icon;
+    }
+
+    div[class^=bodyTitleText-] {
+      color: $accent-user-header-text;
+    }
+  }
+
+  div[class^=footer-] {
+    background: rgba($bg-user-footer,.9);
+  }
+
+  .quick-message {
+    background: rgba($accent-quick-message-input, .9);
+    border: 1px solid $accent-quick-message-border;
+    color: $accent-quick-message-text;
+  }
+}
+
+// Notes
+.note textarea {
+  color: $accent-user-notes;
+
+  &:focus {
+    background: rgba($accent-user-notes-focus,.5);
+  }
+}
+
+// Pro-tip
+.protip {
+  color: $text-protip;
+}
+
+// Member Roles
+.member {
+  .member-roles {
+    border: 1px solid $accent-role-border;
+    color: $text-role;
+  }
+}
+
+
+// User Profile Modals
+#user-profile-modal {
+  .header {
+    background: rgba($bg-profile,.9);
+
+    &:after {
+      background: linear-gradient(to bottom, rgba($bg-profile,1) 0%,rgba($bg-profile,0) 100%);
+    }
+  }
+
+  .tab-bar-container, .scroller, .empty {
+    background: rgba($bg-profile,.9);
+  }
+
+  .guilds .guild {
+    &:hover {
+      background: linear-gradient(to right,  rgba($accent-profile-guild-list,1) 0%,rgba($accent-profile-guild-list,0) 100%)!important;
+    }
+  }
+}

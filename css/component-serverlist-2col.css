@@ -1,0 +1,36 @@
+/**************************************************
+  CREDITS
+  -------------------------------------------------
+  Author Information
+  -------------------------------------------------
+  Rosie (me@rosie.moe)
+
+  -------------------------------------------------
+  Github Repository
+  -------------------------------------------------
+  https://github.com/rosieneko/betterdiscord-themes
+
+ **************************************************/
+/**************************************************
+  Component: 2-Column Server List
+
+  Replaces the default 1-column server list with
+  a 2-column design. Should be imported AFTER the
+  base theme CSS URL and the main theme. Read the
+  README.md for more information.
+ **************************************************/
+.guilds-wrapper {
+  width: 115px; }
+  .guilds-wrapper .scroller-wrap {
+    width: 130px; }
+  .guilds-wrapper .guild-separator {
+    width: 100%; }
+  .guilds-wrapper .guilds {
+    text-align: center; }
+    .guilds-wrapper .guilds .guild {
+      display: inline-flex; }
+      .guilds-wrapper .guilds .guild.guilds-add {
+        display: block;
+        margin: 8px auto 0 auto !important; }
+
+/*# sourceMappingURL=component-serverlist-2col.css.map */

@@ -1,0 +1,49 @@
+.popout-open .header-1tSljs, .header-1tSljs:hover,
+div[class^=headerNormal-], div[class^=userPopout] div[class^=body], div[class^=userPopout] div[class^=footer],
+.quick-message, /* user profile popup */
+#user-profile-modal, #user-profile-modal .header, #user-profile-modal .header:after, #user-profile-modal .avatar-wrapper,
+#user-profile-modal .tab-bar-container, #user-profile-modal .scroller, #user-profile-modal .empty,
+.popout .themed-popout, .themed-popout .header, .popout .themed-popout .footer {
+  background: none;
+}
+
+.theme-light, .theme-dark {
+  .themed-popout .header, .themed-popout-wrap .header, .messages-popout-wrap .messages-popout .message-group  {
+    background: none;
+  }
+}
+
+.theme-dark {
+  .themed-popout .header, .private-channel-recipients-invite .friend {
+    background: none;
+  }
+}
+
+// Popout Menus
+.popout {
+  .themed-popout {
+    background-clip: content-box;
+
+    .messages-popout {
+      border-radius: 0;
+
+      .message-group {
+        border: 2px solid transparent;
+
+        .action-buttons, .action-buttons:hover {
+          background: none !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+
+    // Group DM Invite
+    &.private-channel-recipients-invite {
+      .friend {
+        &.selected, &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+}

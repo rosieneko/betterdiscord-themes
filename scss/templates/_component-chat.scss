@@ -1,0 +1,52 @@
+/**************************************************
+  Component: Chat
+ **************************************************/
+.content .flex-spacer, #friends {
+  background: rgba($bg-chat,0.9) !important;
+}
+
+.theme-dark, .theme-light {
+  #friends .friends-table .friends-row:hover {
+    background: rgba($friends-hover-bg,0.7) !important;
+  }
+}
+
+.chat {
+  div[class*=title-], .titleCall-3X0yGQ {
+    background: rgba($bg-chat,0.9) !important;
+  }
+
+  .theme-dark .titleCall-3X0yGQ {
+    background: rgba($bg-private-call-title-dark,0.9) !important;
+  }
+
+  .new-messages-bar {
+    @include bar-message($chat-new-bg,$chat-new-text,$chat-new-text-action,$chat-new-text-action-hover);
+  }
+
+  .jump-to-present-bar {
+    @include bar-message($chat-jump-bg,$chat-jump-text,$chat-jump-text-action,$chat-jump-text-action-hover);
+  }
+}
+
+// Main Chat Text Input
+.inner-3if5cm {
+  background: rgba($accent-chat-text-input,.5) !important;
+}
+
+// NSFW Channel
+div[class*=nsfw-] {
+  background: rgba($bg-chat,0.9);
+}
+
+// Private Calls
+.private-channel-call {
+  background: rgba($bg-private-call, 0.9) !important;
+}
+
+// Main Search Bar
+.search {
+  .search-bar {
+    background: rgba($search-bar-bg,.1) !important;
+  }
+}

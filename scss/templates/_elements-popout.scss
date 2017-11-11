@@ -1,0 +1,38 @@
+
+
+// Popout Menus
+.popout {
+  .themed-popout {
+    > .header, > .body, > .footer, .messages-popout {
+      background: rgba($bg-popout,0.9);
+    }
+
+    .messages-popout {
+
+      .message-group {
+        background: rgba($bg-popout,.6);
+        border-color: rgba($accent-popout-message-border,.2);
+
+        &:hover {
+          border-color: rgba($accent-popout-message-border,.4);
+        }
+      }
+    }
+
+    .header {
+      .subtitle {
+        color: $text-main;
+      }
+    }
+
+    // Group DM Invite
+    &.private-channel-recipients-invite {
+      .friend {
+        &:hover {
+          background: linear-gradient(to right,  rgba($accent-popout-hover,1) 0%,rgba($accent-popout-hover,.5) 100%);
+        }
+      }
+    }
+
+  }
+}

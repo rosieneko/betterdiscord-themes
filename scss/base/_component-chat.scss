@@ -1,0 +1,41 @@
+/**************************************************
+  Component: Chat
+ **************************************************/
+
+.chat {
+  .content {
+    div[class*=nsfw-] {
+      max-width: 100%;
+    }
+  }
+
+  .new-messages-bar {
+    background: none;
+  }
+
+  .jump-to-present-bar {
+    background: none;
+  }
+}
+
+/* This removes the date from underneath the "new messages" divider, if new messages and date overlaps. */
+.divider.divider-red + .divider:not(.divider-red) {
+  display: none;
+}
+
+
+/* DM Calls */
+.private-channel-call {
+  margin-bottom: 0;
+  top: 0;
+}
+
+.theme-light, .theme-dark {
+  .ui-video.minimum {
+    background: none;
+  }
+  .private-channel-call.minimum .private-channel-call-actions .center {
+    background: none;
+    border: none;
+  }
+}

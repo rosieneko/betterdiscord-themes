@@ -1,0 +1,25 @@
+// Messages Bar
+@mixin bar-message ($bg, $text, $text-action, $text-action-hover) {
+  background: rgba($bg,0.9);
+
+  &:hover {
+    background: rgba($bg,1);
+  }
+
+  button {
+    color: $text;
+
+    &:last-child {
+      color: $text-action;
+
+      &:hover {
+        color: $text-action-hover;
+      }
+    }
+  }
+}
+
+// Select/Hover Gradient
+@mixin gradient-select ($bg,$opacity) {
+  background: linear-gradient(to right,  rgba($bg,$opacity) 0%,rgba($bg,0) 100%)!important;
+}

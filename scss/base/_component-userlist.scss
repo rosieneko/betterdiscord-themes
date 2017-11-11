@@ -1,0 +1,32 @@
+/**************************************************
+  Components: User List Selection
+ **************************************************/
+
+.channel-members {
+  background: none;
+
+  .member {
+    &.popout-open, &:hover {
+      background: none;
+    }
+
+    .member-username {
+      font-size: 90%;
+    }
+
+    .member-game {
+      font-size: 80%;
+    }
+  }
+
+  h2 {
+    clear: both;
+    margin-top: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
+  }
+}

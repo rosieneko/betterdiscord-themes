@@ -1,0 +1,114 @@
+// Base Theme Colors
+// For general colors used that are not in the default base variables file, and specific to this particular theme.
+$grey: #737f8d; // regular grey text
+$grey-dark: #4f545c;
+$bg-grey: #36393e;
+$bg-grey-dark: #2a2c31;
+$bg-grey-dark-2: #1e2124;
+
+$white-off: #f6f6f7; // selected text in side areas
+$grey-secondary: #72767d; // main text in side areas
+$grey-light: #dcddde; // unread text in side areas
+$grey-light-2: #b9bbbe; // hover text in side areas
+
+// Elements: Core
+$bg-discord-bar: darken($bg-grey-dark-2,10%);
+
+
+// Elements: General Text
+$text-h2: $grey-light;
+$text-h3: $grey-light;
+$text-h4: $white-off;
+
+$text-main: $white-off;
+$text-secondary: $grey-light;
+$text-strong: $grey-light;
+
+
+// Elements: General Text
+$accent-scrollbar: $black;
+$accent-divider: $grey-light;
+$accent-input-inactive: $grey;
+$accent-text-input: $bg-grey-dark;
+
+
+// Component: Modals
+$bg-modal: $bg-grey;
+$bg-privacy: $bg-grey;
+
+
+// Component: Server List
+$guild-bg: $bg-grey-dark-2;
+$guild-separator-accent: $bg-grey-dark-2;
+
+
+// Component: Channels
+$bg-channel: $bg-grey-dark;
+$channel-unread-bg: $grey;
+$channel-unread-text: $white;
+$accent-channel-list: $bg-grey-dark-2;
+$accent-rtc-connection: $bg-grey-dark-2;
+
+
+// Component: Activity Feed
+$feed-main-bg: $bg-grey;
+$feed-activity-header-bg: #202225;
+$feed-activity-body-bg: #36393f;
+
+
+// Component: Friends List
+$friends-hover-bg: $bg-grey-dark-2;
+
+// Component: Chat
+$search-bar-bg: $bg-grey-dark;
+$bg-chat: $bg-grey;
+$chat-new-bg: desaturate(darken($discord-blue,10%),30%);
+$chat-new-text: $white;
+$chat-new-text-action: #c9d2f0;
+$chat-new-text-action-hover: $white;
+$chat-jump-bg: $grey;
+$chat-jump-text: $white;
+$chat-jump-text-action: #c9d2f0;
+$chat-jump-text-action-hover: $white;
+$accent-chat-text-input: $bg-grey-dark;
+
+$bg-private-call: $bg-grey;
+$bg-private-call-title-dark: $bg-grey;
+
+
+// Component: User List / Sidebar
+$bg-sidebar: $bg-grey-dark;
+$accent-user-list: $bg-grey-dark-2;
+$text-shadow-sidebar: $bg-grey-dark;
+
+
+// Component: User Info Popups
+$bg-user-header: #1e243b;
+$bg-user-body: $bg-grey-dark;
+$bg-user-footer: $bg-grey;
+
+$bg-popout: $bg-grey;
+$bg-profile: $bg-grey;
+
+$accent-role-border: $grey-light;
+$text-role: $grey;
+
+$accent-user-header-icon: $grey-secondary;
+$accent-user-header-text: $grey-secondary;
+$accent-user-notes: $bg-grey;
+$accent-user-notes-focus: darken($bg-grey,10%);
+
+$accent-quick-message-input: $bg-grey-dark;
+$accent-quick-message-border: #e0e5e8;
+$accent-quick-message-text: $grey;
+
+$text-protip: #99aab5;
+
+$accent-popout-hover: $bg-grey-dark;
+$accent-popout-message-border: $grey;
+$accent-profile-guild-list: $bg-grey-dark;
+
+
+// Component: Admin Panel
+$bg-card: $bg-grey-dark;
+$bg-card-2: $bg-grey;

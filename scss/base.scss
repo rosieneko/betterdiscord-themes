@@ -1,0 +1,23 @@
+/**************************************************
+  Theme: Base Theme Modifications
+  Credits: Rosie (me@rosie.moe)
+  https://github.com/rosieneko/betterdiscord-themes
+
+  Creates a skeleton theme from which other
+  themes are built upon. This should always
+  be used with other theme replacements that
+  have been created. Read the README.md for
+  more information.
+ **************************************************/
+
+@import 'mixins/_mixins';
+@import 'variables/_base';
+@import 'base/_elements-backgrounds';
+@import 'base/_elements-core';
+// @import 'base/_element-popout';
+@import 'base/_component-serverlist';
+@import 'base/_component-channels';
+@import 'base/_component-activityfeed';
+@import 'base/_component-chat';
+@import 'base/_component-userlist';
+// @import 'base/_component-userinfo';

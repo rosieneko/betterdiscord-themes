@@ -1,0 +1,15 @@
+/**************************************************
+  Component: BetterDiscord Admin
+
+  Fixes some key elements of the BetterDiscord
+  admin pages.
+ **************************************************/
+
+#bd-settingspane-container {
+  h2.ui-form-title {
+    color: $text-h2 !important;
+  }
+  .ui-switch-item h3 {
+    color: $text-main !important;
+  }
+}
