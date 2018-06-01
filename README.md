@@ -1,11 +1,12 @@
 # Rosie's BetterDiscord Themes
-This is a git repository for BetterDiscord themes created by Discord user **Rosie#0588.** Feel free to use these how you see fit. Please remember to credit me if you use this elsewhere or share this with others (link to this git repository).
+This is a git repository for BetterDiscord themes created by Discord user **Rosie#0530.** Feel free to use these how you see fit. Please remember to credit me if you use this elsewhere or share this with others (link to this git repository).
 
-_**Last updated:**_ November 11, 2017
+_**Last updated:**_ June 01, 2018
 
 ## Table of Contents
 * [Basic Information](#basic-information)
     * [Contact Me](#contact-me)
+    * [Latest Release Notes](#latest-release-notes)
     * [Planned Updates](#planned-updates)
 * [Available CSS](#available-css)
     * [Theme Replacements](#theme-replacements)
@@ -22,10 +23,12 @@ If you have any questions on how to use these themes, feel free to email me ([me
 
 Suggestions, issues, and feedback should be given as bug reports here on Github for easier tracking. Please be as detailed as possible when submitting a bug report (screencaps are useful).
 
+### Latest Release Notes
+Made long-needed revisions to update the theming to accommodate for class changes made on Discord's end.
+
 ### Planned Updates
 * Popout styles
 * User profile styles
-* Dark theme elements that are not targetted in the default
 * Core background styles refactor
 * More colored themes
 

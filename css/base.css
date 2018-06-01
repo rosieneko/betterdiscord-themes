@@ -1,233 +1,92 @@
-/**************************************************
-  Theme: Base Theme Modifications
-  Credits: Rosie (me@rosie.moe)
-  https://github.com/rosieneko/betterdiscord-themes
+/*
+Error: Undefined variable: "$notice-".
+        on line 67 of base/_elements-core.scss
+        from line 16 of base.scss
 
-  Creates a skeleton theme from which other
-  themes are built upon. This should always
-  be used with other theme replacements that
-  have been created. Read the README.md for
-  more information.
- **************************************************/
-/**************************************************
-  Elements: Backgrounds
-
-  Overrides most of the background elements
-  for Discord. In the individual themes, some
-  of these elements will be moved to the
-  component to which they belong.
- **************************************************/
-div[class*=appMount-], div[class*=container-],
-.guilds-wrapper, .guilds-wrapper .guilds .guild .guild-inner,
-.search-bar .search-bar-inner,
-.private-channels .channel.selected a, .private-channels .channel a:hover, .private-channels .channel:hover a,
-div[class*=contentSelectedText-], div[class*=contentHoveredText-],
-div[class*=contentHoveredVoice-], div[class*=contentSelectedVoice-], div[class*=contentHoveredVoice-]:active, div[class*=contentSelectedVoice-]:active,
-#friends, .chat .divider:before, .chat .divider > span, .mention, .typing,
-.search-results-wrap, .channel-members .member.popout-open, .channel-members .member:hover,
-.search-bar, .search-bar.search-bar-light .search-bar-inner {
-  background: none; }
-
-.theme-dark .layer, .theme-dark .layers,
-.theme-dark #friends .friends-table .friends-row:hover,
-.theme-dark .chat, .theme-dark div[class*=title-], .theme-dark .search .search-bar, .theme-dark .chat > .content, .theme-dark .messages-wrapper, .theme-dark .messages-wrapper .messages .divider:before,
-.theme-dark .chat form, .theme-dark div[class*=inner-],
-.theme-dark div[class*=headerBar-], .theme-dark .friends-table, .theme-dark .friends-table .messages .divider:before,
-.theme-dark .ui-standard-sidebar-view, .theme-dark .ui-standard-sidebar-view .sidebar-region, .theme-dark .ui-standard-sidebar-view .content-region, .theme-light .layer, .theme-light .layers,
-.theme-light #friends .friends-table .friends-row:hover,
-.theme-light .chat, .theme-light div[class*=title-], .theme-light .search .search-bar, .theme-light .chat > .content, .theme-light .messages-wrapper, .theme-light .messages-wrapper .messages .divider:before,
-.theme-light .chat form, .theme-light div[class*=inner-],
-.theme-light div[class*=headerBar-], .theme-light .friends-table, .theme-light .friends-table .messages .divider:before,
-.theme-light .ui-standard-sidebar-view, .theme-light .ui-standard-sidebar-view .sidebar-region, .theme-light .ui-standard-sidebar-view .content-region {
-  background: none; }
-
-.theme-dark .messages-wrapper .messages .divider span, .theme-dark .chat form .typing,
-.theme-dark #friends, .theme-dark .friends-table .messages .divider span,
-.theme-dark .channel-members, .theme-dark .search-results-wrap, .theme-dark .search-results-wrap .search-header,
-.theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:hover {
-  background: none; }
-
-div[class*=appMount-], div[class*=backdrop-] {
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-/**************************************************
-  Elements: Core
- **************************************************/
-div[class*=typeWindows-] {
-  height: 30px;
-  margin: 0; }
-  div[class*=typeWindows-] div[class*=wordmark-] {
-    padding: 7px 8px; }
-  div[class*=typeWindows-] div[class*=winButton-] {
-    height: 12px;
-    padding: 9px 26px;
-    top: inherit;
-    width: 12px; }
-
-div[class*=base-] {
-  border-radius: 0; }
-
-div[class*=scroller]::-webkit-scrollbar {
-  width: 12px !important; }
-  div[class*=channels-] div[class*=scroller]::-webkit-scrollbar {
-    width: 10px !important; }
-div[class*=scroller]::-webkit-scrollbar-thumb {
-  border: 3px solid transparent !important;
-  border-radius: 10px !important;
-  background-clip: content-box !important; }
-div[class*=scroller]::-webkit-scrollbar-track-piece {
-  border: 3px solid transparent !important;
-  background: none !important; }
-div[class*=scroller]::-webkit-scrollbar-track {
-  background: none !important; }
-
-.notice {
-  background: rgba(242, 101, 34, 0.8);
-  border-radius: 0; }
-  .notice.notice-streamer-mode {
-    background: rgba(89, 54, 149, 0.8); }
-  .notice.notice-facebook {
-    background: rgba(53, 80, 137, 0.8); }
-
-.search-results-wrap .channel-separator .channel-name {
-  background: none !important; }
-.search-results-wrap .search-result:before, .search-results-wrap .search-result:after, .search-results-wrap .search-result .search-result-message.hit {
-  background: none !important; }
-.search-results-wrap .search-result:not(.expanded) .search-result-message.before, .search-results-wrap .search-result:not(.expanded) .search-result-message.after {
-  opacity: .5; }
-
-/**************************************************
-  Component: Default 1-Column Server List
- **************************************************/
-.guilds-wrapper {
-  width: 65px; }
-  .guilds-wrapper .scroller-wrap {
-    width: 85px; }
-  .guilds-wrapper .guild-separator {
-    width: 45px; }
-  .guilds-wrapper .guilds .guild, .guilds-wrapper .guilds .guild .avatar-small, .guilds-wrapper .guilds .guild .guild-inner a, .guilds-wrapper .guilds-error {
-    line-height: 35px;
-    width: 35px;
-    height: 35px; }
-  .guilds-wrapper .guilds {
-    padding: 10px; }
-    .guilds-wrapper .guilds .friends-online {
-      display: none; }
-    .guilds-wrapper .guilds .dms {
-      margin-top: 0; }
-      .guilds-wrapper .guilds .dms .guild .guild-inner {
-        box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.8); }
-    .guilds-wrapper .guilds .guild {
-      width: 39px;
-      height: 39px;
-      padding: 3px; }
-      .guilds-wrapper .guilds .guild + .guild {
-        margin-top: 1px !important; }
-      .guilds-wrapper .guilds .guild.guilds-add {
-        margin: 6px 5px 5px 5px;
-        padding: 0 !important;
-        height: 35px;
-        width: 35px; }
-      .guilds-wrapper .guilds .guild:before {
-        display: none !important; }
-      .guilds-wrapper .guilds .guild.unread .guild-inner {
-        border: 2px solid transparent;
-        border-radius: 35px !important;
-        box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.8); }
-      .guilds-wrapper .guilds .guild.selected .guild-inner {
-        border: 2px solid white;
-        border-radius: 35px !important;
-        box-shadow: 0 0 3px 1px white; }
-      .guilds-wrapper .guilds .guild .guild-inner {
-        background: none;
-        background-clip: content-box;
-        background-origin: content-box;
-        background-size: contain;
-        border: 2px solid transparent;
-        border-radius: 35px !important;
-        box-sizing: border-box !important;
-        transition: border .25s ease-in-out, box-shadow .25s ease-in-out;
-        transition-delay: 0s; }
-      .guilds-wrapper .guilds .guild .avatar-small {
-        background-clip: content-box;
-        background-origin: content-box;
-        background-size: contain; }
-      .guilds-wrapper .guilds .guild .friends-icon {
-        background-size: 25px 30px;
-        height: 35px;
-        width: 35px; }
-      .guilds-wrapper .guilds .guild.audio .guild-inner:after, .guilds-wrapper .guilds .guild.video .guild-inner:after {
-        background-size: 12px;
-        height: 16px;
-        right: 0;
-        top: 0;
-        width: 16px; }
-      .guilds-wrapper .guilds .guild .badge {
-        bottom: 0;
-        right: 0; }
-
-/**************************************************
-  Component: Channels
- **************************************************/
-.channels-3g2vYe {
-  background: none; }
-  .channels-3g2vYe .unread-2TDDFN {
-    background: none; }
-  .channels-3g2vYe .container-3lnMWU {
-    border-bottom: 0; }
-  .channels-3g2vYe .container-iksrDt {
-    margin-bottom: 0; }
-
-/**************************************************
-  Component: Activity Feed
- **************************************************/
-.theme-dark .activityFeed-HeiGwL, .theme-dark .feed-2fHzeU, .theme-dark .activity-3tgXuD, .theme-dark .header-34ZDfM, .theme-dark .body-2WmNzl, .theme-light .activityFeed-HeiGwL, .theme-light .feed-2fHzeU, .theme-light .activity-3tgXuD, .theme-light .header-34ZDfM, .theme-light .body-2WmNzl {
-  background: none; }
-
-/**************************************************
-  Component: Chat
- **************************************************/
-.chat .content div[class*=nsfw-] {
-  max-width: 100%; }
-.chat .new-messages-bar {
-  background: none; }
-.chat .jump-to-present-bar {
-  background: none; }
-
-/* This removes the date from underneath the "new messages" divider, if new messages and date overlaps. */
-.divider.divider-red + .divider:not(.divider-red) {
-  display: none; }
-
-/* DM Calls */
-.private-channel-call {
-  margin-bottom: 0;
-  top: 0; }
-
-.theme-light .ui-video.minimum, .theme-dark .ui-video.minimum {
-  background: none; }
-.theme-light .private-channel-call.minimum .private-channel-call-actions .center, .theme-dark .private-channel-call.minimum .private-channel-call-actions .center {
-  background: none;
-  border: none; }
-
-/**************************************************
-  Components: User List Selection
- **************************************************/
-.channel-members {
-  background: none; }
-  .channel-members .member.popout-open, .channel-members .member:hover {
-    background: none; }
-  .channel-members .member .member-username {
-    font-size: 90%; }
-  .channel-members .member .member-game {
-    font-size: 80%; }
-  .channel-members h2 {
-    clear: both;
-    margin-top: 12px;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-    .channel-members h2:first-of-type {
-      margin-top: 0 !important; }
-
-/*# sourceMappingURL=base.css.map */
+Backtrace:
+base/_elements-core.scss:67
+base.scss:16
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/funcall.rb:186:in `perform_arg'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/funcall.rb:133:in `block in _perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/funcall.rb:133:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/funcall.rb:133:in `each_with_index'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/funcall.rb:133:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/funcall.rb:133:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/funcall.rb:133:in `_perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/scss:13:in `<top (required)>'
+C:/Ruby24-x64/bin/scss:23:in `load'
+C:/Ruby24-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$notice-\".\A         on line 67 of base/_elements-core.scss\A         from line 16 of base.scss"; }

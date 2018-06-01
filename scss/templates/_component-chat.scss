@@ -1,6 +1,11 @@
 /**************************************************
   Component: Chat
  **************************************************/
+
+.noChannel-2EQ0a9 {
+  background: rgba($bg-chat,.9) !important;
+}
+
 .content .flex-spacer, #friends {
   background: rgba($bg-chat,0.9) !important;
 }
@@ -30,7 +35,7 @@
 }
 
 // Main Chat Text Input
-.inner-3if5cm {
+.inner-zqa7da {
   background: rgba($accent-chat-text-input,.5) !important;
 }
 
@@ -40,8 +45,18 @@ div[class*=nsfw-] {
 }
 
 // Private Calls
-.private-channel-call {
-  background: rgba($bg-private-call, 0.9) !important;
+.theme-light, .theme-dark {
+  .titleCall-_b9o8P, .video-1FfuMD.minimum-1pRSEN {
+    background: rgba($bg-private-call, 0.9) !important;
+  }
+}
+
+.theme-light {
+  .titleWrapper-1l0xT9.theme-dark {
+    .titleCall-_b9o8P {
+      background: rgba($bg-private-call-title-dark, 0.9) !important;
+    }
+  }
 }
 
 // Main Search Bar

@@ -22,11 +22,12 @@ div[class*=contentHoveredVoice-], div[class*=contentSelectedVoice-], div[class*=
 
 // Nested Elements
 .theme-dark, .theme-light {
-  .layer, .layers,
+  .layer, .layers, .layer-3QrUeG, .layers-3iHuyZ,
   #friends .friends-table .friends-row:hover,
   .chat, div[class*=title-], .search .search-bar, .chat>.content, .messages-wrapper, .messages-wrapper .messages .divider:before,
   .chat form, div[class*=inner-],
   div[class*=headerBar-], .friends-table, .friends-table .messages .divider:before,
+  .typing-2GQL18,
   .ui-standard-sidebar-view, .ui-standard-sidebar-view .sidebar-region, .ui-standard-sidebar-view .content-region /* admin */ {
     background: none;
   }

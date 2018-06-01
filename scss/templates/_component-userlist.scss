@@ -2,7 +2,7 @@
   Components: User List Selection
  **************************************************/
 
-.channel-members {
+.members-1998pB {
   background: rgba($bg-sidebar,0.9) !important;
 
   .member {
@@ -15,7 +15,7 @@
     }
   }
 
-  h2 {
+  .membersGroup-v9BXpm {
     @include gradient-select($accent-user-list,1);
   }
 }

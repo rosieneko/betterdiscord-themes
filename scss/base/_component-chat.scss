@@ -34,8 +34,26 @@
   .ui-video.minimum {
     background: none;
   }
-  .private-channel-call.minimum .private-channel-call-actions .center {
+
+  .private-channel-call {
     background: none;
-    border: none;
+
+    &.minimum {
+      .private-channel-call-info {
+        padding-top: 0;
+      }
+    }
+
+    &.minimum, &.normal {
+      .private-channel-call-actions .center {
+        background: none;
+        border: none;
+      }
+    }
   }
+}
+
+// Aligning the user icons vertically center
+.wrapper-2h3Puq {
+  align-items: center !important;
 }
