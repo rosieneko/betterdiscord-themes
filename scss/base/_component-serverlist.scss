@@ -14,7 +14,8 @@
   }
 
   // Overriding the default width and height in one go.
-  .guilds .guild, .guilds .guild .avatar-small, .guilds .guild .guild-inner a, .guilds-error {
+  .guilds .guild, .guilds .guild .avatar-small, .guilds .guild .guild-inner a, .guilds-error,
+  .iconSizeLarge-161qtT {
     line-height: $size-guild;
     width: $size-guild;
     height: $size-guild;

@@ -82,7 +82,7 @@ div[class*=typeWindows-] {
 /**************************************************
   Component: Chat
  **************************************************/
-.noChannel-2EQ0a9 {
+.noChannel-2EQ0a9, .noChannel-Z1DQK7 {
   background: rgba(54, 57, 62, 0.9) !important; }
 
 .content .flex-spacer, #friends {
@@ -134,11 +134,11 @@ div[class*=nsfw-] {
 /**************************************************
   Component: Activity Feed
  **************************************************/
-.theme-dark .activityFeed-HeiGwL, .theme-light .activityFeed-HeiGwL {
+.theme-dark .activityFeed-28jde9, .theme-light .activityFeed-28jde9 {
   background: rgba(54, 57, 62, 0.9); }
 .theme-dark .header-34ZDfM, .theme-light .header-34ZDfM {
   background: rgba(32, 34, 37, 0.9); }
-.theme-dark .body-2WmNzl, .theme-light .body-2WmNzl {
+.theme-dark .body-SKIE6r, .theme-light .body-SKIE6r {
   background: rgba(54, 57, 63, 0.9); }
 
 /**************************************************

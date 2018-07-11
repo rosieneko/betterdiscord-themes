@@ -24,6 +24,11 @@ div[class*=base-] {
   border-radius: 0;
 }
 
+// Loading Screen Overlay
+.container-16j22k.da-container {
+  background: $bg-grey-dark !important;
+}
+
 // Scrollbars
 div[class*=scroller] {
   &::-webkit-scrollbar {

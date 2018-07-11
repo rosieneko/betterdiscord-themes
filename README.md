@@ -1,7 +1,7 @@
 # Rosie's BetterDiscord Themes
 This is a git repository for BetterDiscord themes created by Discord user **Rosie#0530.** Feel free to use these how you see fit. Please remember to credit me if you use this elsewhere or share this with others (link to this git repository).
 
-_**Last updated:**_ June 01, 2018
+_**Last updated:**_ July 11, 2018
 
 ## Table of Contents
 * [Basic Information](#basic-information)
@@ -24,9 +24,10 @@ If you have any questions on how to use these themes, feel free to email me ([me
 Suggestions, issues, and feedback should be given as bug reports here on Github for easier tracking. Please be as detailed as possible when submitting a bug report (screencaps are useful).
 
 ### Latest Release Notes
-Made long-needed revisions to update the theming to accommodate for class changes made on Discord's end.
+Additional changes to accommodate for small background transparency issues that have cropped up, and also fixing broken styles due to class changes since latest Discord update.
 
 ### Planned Updates
+* Fix guild icons that are text only
 * Popout styles
 * User profile styles
 * Core background styles refactor

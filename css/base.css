@@ -71,6 +71,9 @@ div[class*=typeWindows-] {
 div[class*=base-] {
   border-radius: 0; }
 
+.container-16j22k.da-container {
+  background: #2a2c31 !important; }
+
 div[class*=scroller]::-webkit-scrollbar {
   width: 12px !important; }
   div[class*=channels-] div[class*=scroller]::-webkit-scrollbar {
@@ -111,7 +114,8 @@ div[class*=scroller]::-webkit-scrollbar-track {
     width: 85px; }
   .guilds-wrapper .guild-separator {
     width: 45px; }
-  .guilds-wrapper .guilds .guild, .guilds-wrapper .guilds .guild .avatar-small, .guilds-wrapper .guilds .guild .guild-inner a, .guilds-wrapper .guilds-error {
+  .guilds-wrapper .guilds .guild, .guilds-wrapper .guilds .guild .avatar-small, .guilds-wrapper .guilds .guild .guild-inner a, .guilds-wrapper .guilds-error,
+  .guilds-wrapper .iconSizeLarge-161qtT {
     line-height: 35px;
     width: 35px;
     height: 35px; }
@@ -211,6 +215,10 @@ div[class*=scroller]::-webkit-scrollbar-track {
 
 .theme-light .ui-video.minimum, .theme-dark .ui-video.minimum {
   background: none; }
+.theme-light .wrapper-29NfPK, .theme-dark .wrapper-29NfPK {
+  background: none;
+  margin-bottom: 0;
+  top: 0; }
 .theme-light .private-channel-call, .theme-dark .private-channel-call {
   background: none; }
   .theme-light .private-channel-call.minimum .private-channel-call-info, .theme-dark .private-channel-call.minimum .private-channel-call-info {
