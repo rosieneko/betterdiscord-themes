@@ -1,0 +1,34 @@
+/**************************************************
+  Component: Minimized Channel List Icons
+  Credits: Rosie (me@rosie.moe)
+  https://github.com/rosieneko/betterdiscord-themes
+
+  Replaces the default expanded channel list icons
+  with a compact design. Should be imported AFTER the
+  base theme CSS URL and the main theme. Read the
+  README.md for more information.
+ **************************************************/
+
+@import 'variables/_base';
+
+div.scroller-2FKFPG {
+    div.channel-2QD9_O:nth-child(-n + 5) {
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+
+        a {
+            margin: 1px 5px;
+
+            .linkButtonIcon-Mlm5d6 {
+                margin: 0 auto;
+            }
+
+            .name-2WpE7M {
+                display: none;
+            }
+        }
+    }
+}

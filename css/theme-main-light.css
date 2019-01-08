@@ -14,10 +14,10 @@ div[class*=typeWindows-] {
 
 .search-results-wrap {
   background: rgba(243, 243, 243, 0.9) !important; }
-  .search-results-wrap .channel-separator .channel-name {
-    text-shadow: -1px -1px 0 #f3f3f3, 1px -1px 0 #f3f3f3, -1px 1px 0 #f3f3f3, 1px 1px 0 #f3f3f3; }
-  .search-results-wrap .search-result.expanded .search-result-message.before, .search-results-wrap .search-result.expanded .search-result-message.after {
-    background: rgba(255, 255, 255, 0.3); }
+.search-results-wrap .channel-separator .channel-name {
+  text-shadow: -1px -1px 0 #f3f3f3, 1px -1px 0 #f3f3f3, -1px 1px 0 #f3f3f3, 1px 1px 0 #f3f3f3; }
+.search-results-wrap .search-result.expanded .search-result-message.before, .search-results-wrap .search-result.expanded .search-result-message.after {
+  background: rgba(255, 255, 255, 0.3); }
 
 /**************************************************
   Elements: Modals
@@ -33,88 +33,91 @@ div[class*=typeWindows-] {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding: 1em; }
-  .detected-platform-accounts-modal .body {
-    color: #737f8d; }
-    .detected-platform-accounts-modal .body strong {
-      color: #4f545c; }
-  .detected-platform-accounts-modal .detected-account-details h3 {
-    color: #4f545c !important; }
-  .detected-platform-accounts-modal .detected-account-details h4 {
-    color: #737f8d !important; }
-  .detected-platform-accounts-modal .input-switch .input-switch-slider {
-    background: #737f8d; }
-  .detected-platform-accounts-modal .divider {
-    background: rgba(79, 84, 92, 0.5); }
-  .detected-platform-accounts-modal .btn-group .btn-default {
-    color: #737f8d; }
-  .detected-platform-accounts-modal .privacy {
-    background: rgba(255, 255, 255, 0.8);
-    color: #4f545c;
-    padding: .5em;
-    border-radius: 10px; }
+.detected-platform-accounts-modal .body {
+  color: #737f8d; }
+.detected-platform-accounts-modal .body strong {
+  color: #4f545c; }
+.detected-platform-accounts-modal .detected-account-details h3 {
+  color: #4f545c !important; }
+.detected-platform-accounts-modal .detected-account-details h4 {
+  color: #737f8d !important; }
+.detected-platform-accounts-modal .input-switch .input-switch-slider {
+  background: #737f8d; }
+.detected-platform-accounts-modal .divider {
+  background: rgba(79, 84, 92, 0.5); }
+.detected-platform-accounts-modal .btn-group .btn-default {
+  color: #737f8d; }
+.detected-platform-accounts-modal .privacy {
+  background: rgba(255, 255, 255, 0.8);
+  color: #4f545c;
+  padding: .5em;
+  border-radius: 10px; }
 
 /**************************************************
   Component: Server List
  **************************************************/
 .guilds-wrapper {
   background: rgba(30, 33, 36, 0.9); }
-  .guilds-wrapper .guild-separator:after {
-    background: #1e2124; }
+.guilds-wrapper .guild-separator:after {
+  background: #1e2124; }
 
 /**************************************************
   Component: Channels
  **************************************************/
 .channels-Ie2l6A {
   background: rgba(42, 44, 49, 0.9); }
-  .channels-Ie2l6A .unread-2TDDFN {
-    background: rgba(115, 127, 141, 0.9); }
-    .channels-Ie2l6A .unread-2TDDFN:hover {
-      background: #737f8d; }
-    .channels-Ie2l6A .unread-2TDDFN div[class*=bar-], .channels-Ie2l6A .unread-2TDDFN div[class*=icon-] {
-      color: #ffffff; }
-  .channels-Ie2l6A .container-2Thooq {
-    background: linear-gradient(to bottom, rgba(30, 33, 36, 0) 0%, rgba(30, 33, 36, 0.9) 100%) !important; }
-  .channels-Ie2l6A .channel.selected, .channels-Ie2l6A div[class*=wrapperSelectedText-], .channels-Ie2l6A div[class*=wrapperHoveredVoice-]:active, .channels-Ie2l6A div[class*=wrapperSelectedVoice-]:active {
-    background: linear-gradient(to right, #1e2124 0%, rgba(30, 33, 36, 0) 100%) !important; }
-  .channels-Ie2l6A .channel:hover, .channels-Ie2l6A div[class*=wrapperHoveredText-], .channels-Ie2l6A div[class*=wrapperHoveredVoice-], .channels-Ie2l6A div[class*=userHovered-] {
-    background: linear-gradient(to right, rgba(30, 33, 36, 0.7) 0%, rgba(30, 33, 36, 0) 100%) !important; }
+.channels-Ie2l6A .unread-2TDDFN {
+  background: rgba(115, 127, 141, 0.9); }
+.channels-Ie2l6A .unread-2TDDFN:hover {
+  background: #737f8d; }
+.channels-Ie2l6A .unread-2TDDFN div[class*=bar-], .channels-Ie2l6A .unread-2TDDFN div[class*=icon-] {
+  color: #ffffff; }
+.channels-Ie2l6A .container-2Thooq {
+  background: linear-gradient(to bottom, rgba(30, 33, 36, 0) 0%, rgba(30, 33, 36, 0.9) 100%) !important; }
+.channels-Ie2l6A .channel.selected, .channels-Ie2l6A div[class*=wrapperSelectedText-], .channels-Ie2l6A div[class*=wrapperHoveredVoice-]:active, .channels-Ie2l6A div[class*=wrapperSelectedVoice-]:active {
+  background: linear-gradient(to right, #1e2124 0%, rgba(30, 33, 36, 0) 100%) !important; }
+.channels-Ie2l6A .channel:hover, .channels-Ie2l6A div[class*=wrapperHoveredText-], .channels-Ie2l6A div[class*=wrapperHoveredVoice-], .channels-Ie2l6A div[class*=userHovered-] {
+  background: linear-gradient(to right, rgba(30, 33, 36, 0.7) 0%, rgba(30, 33, 36, 0) 100%) !important; }
 
 /**************************************************
   Component: Chat
  **************************************************/
+.theme-light .content-yTz4x3 > .flex-spacer, .theme-dark .content-yTz4x3 > .flex-spacer {
+  background: rgba(255, 255, 255, 0.9); }
+
 .noChannel-2EQ0a9, .noChannel-Z1DQK7 {
   background: rgba(255, 255, 255, 0.9) !important; }
 
-.content .flex-spacer, #friends {
+#friends {
   background: rgba(255, 255, 255, 0.9) !important; }
 
 .theme-dark #friends .friends-table .friends-row:hover, .theme-light #friends .friends-table .friends-row:hover {
   background: rgba(255, 255, 255, 0.7) !important; }
 
-.chat div[class*=title-], .chat .titleCall-3X0yGQ {
+.chat-3bRxxu .titleWrapper-1l0xT9, .chat-3bRxxu .titleCall-3X0yGQ {
   background: rgba(255, 255, 255, 0.9) !important; }
-.chat .theme-dark .titleCall-3X0yGQ {
+.chat-3bRxxu .theme-dark .titleCall-3X0yGQ {
   background: rgba(0, 0, 0, 0.9) !important; }
-.chat .new-messages-bar {
+.chat-3bRxxu .new-messages-bar {
   background: rgba(114, 137, 218, 0.9); }
-  .chat .new-messages-bar:hover {
-    background: #7289da; }
-  .chat .new-messages-bar button {
-    color: #ffffff; }
-    .chat .new-messages-bar button:last-child {
-      color: #c9d2f0; }
-      .chat .new-messages-bar button:last-child:hover {
-        color: #ffffff; }
-.chat .jump-to-present-bar {
+.chat-3bRxxu .new-messages-bar:hover {
+  background: #7289da; }
+.chat-3bRxxu .new-messages-bar button {
+  color: #ffffff; }
+.chat-3bRxxu .new-messages-bar button:last-child {
+  color: #c9d2f0; }
+.chat-3bRxxu .new-messages-bar button:last-child:hover {
+  color: #ffffff; }
+.chat-3bRxxu .jump-to-present-bar {
   background: rgba(115, 127, 141, 0.9); }
-  .chat .jump-to-present-bar:hover {
-    background: #737f8d; }
-  .chat .jump-to-present-bar button {
-    color: #ffffff; }
-    .chat .jump-to-present-bar button:last-child {
-      color: #c9d2f0; }
-      .chat .jump-to-present-bar button:last-child:hover {
-        color: #ffffff; }
+.chat-3bRxxu .jump-to-present-bar:hover {
+  background: #737f8d; }
+.chat-3bRxxu .jump-to-present-bar button {
+  color: #ffffff; }
+.chat-3bRxxu .jump-to-present-bar button:last-child {
+  color: #c9d2f0; }
+.chat-3bRxxu .jump-to-present-bar button:last-child:hover {
+  color: #ffffff; }
 
 .inner-zqa7da {
   background: rgba(255, 255, 255, 0.5) !important; }
@@ -146,12 +149,12 @@ div[class*=nsfw-] {
  **************************************************/
 .members-1998pB {
   background: rgba(243, 243, 243, 0.9) !important; }
-  .members-1998pB .member.popout-open {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%) !important; }
-  .members-1998pB .member:hover {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%) !important; }
-  .members-1998pB .membersGroup-v9BXpm {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%) !important; }
+.members-1998pB .member.popout-open {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%) !important; }
+.members-1998pB .member:hover {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%) !important; }
+.members-1998pB .membersGroup-v9BXpm {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%) !important; }
 
 /**************************************************
   Component: Admin Panel

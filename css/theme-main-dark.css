@@ -82,38 +82,41 @@ div[class*=typeWindows-] {
 /**************************************************
   Component: Chat
  **************************************************/
+.theme-light .content-yTz4x3 > .flex-spacer, .theme-dark .content-yTz4x3 > .flex-spacer {
+  background: rgba(54, 57, 62, 0.9); }
+
 .noChannel-2EQ0a9, .noChannel-Z1DQK7 {
   background: rgba(54, 57, 62, 0.9) !important; }
 
-.content .flex-spacer, #friends {
+#friends {
   background: rgba(54, 57, 62, 0.9) !important; }
 
 .theme-dark #friends .friends-table .friends-row:hover, .theme-light #friends .friends-table .friends-row:hover {
   background: rgba(30, 33, 36, 0.7) !important; }
 
-.chat div[class*=title-], .chat .titleCall-3X0yGQ {
+.chat-3bRxxu .titleWrapper-1l0xT9, .chat-3bRxxu .titleCall-3X0yGQ {
   background: rgba(54, 57, 62, 0.9) !important; }
-.chat .theme-dark .titleCall-3X0yGQ {
+.chat-3bRxxu .theme-dark .titleCall-3X0yGQ {
   background: rgba(30, 33, 36, 0.9) !important; }
-.chat .new-messages-bar {
+.chat-3bRxxu .new-messages-bar {
   background: rgba(108, 122, 173, 0.9); }
-  .chat .new-messages-bar:hover {
+  .chat-3bRxxu .new-messages-bar:hover {
     background: #6c7aad; }
-  .chat .new-messages-bar button {
+  .chat-3bRxxu .new-messages-bar button {
     color: #ffffff; }
-    .chat .new-messages-bar button:last-child {
+    .chat-3bRxxu .new-messages-bar button:last-child {
       color: #c9d2f0; }
-      .chat .new-messages-bar button:last-child:hover {
+      .chat-3bRxxu .new-messages-bar button:last-child:hover {
         color: #ffffff; }
-.chat .jump-to-present-bar {
+.chat-3bRxxu .jump-to-present-bar {
   background: rgba(115, 127, 141, 0.9); }
-  .chat .jump-to-present-bar:hover {
+  .chat-3bRxxu .jump-to-present-bar:hover {
     background: #737f8d; }
-  .chat .jump-to-present-bar button {
+  .chat-3bRxxu .jump-to-present-bar button {
     color: #ffffff; }
-    .chat .jump-to-present-bar button:last-child {
+    .chat-3bRxxu .jump-to-present-bar button:last-child {
       color: #c9d2f0; }
-      .chat .jump-to-present-bar button:last-child:hover {
+      .chat-3bRxxu .jump-to-present-bar button:last-child:hover {
         color: #ffffff; }
 
 .inner-zqa7da {

@@ -55,23 +55,63 @@ div[class*=scroller] {
   }
 }
 
+
 // Top Bar Notifications
-.notice {
-  background: rgba($notice,.8);
+.notice-2FJMB4 {
   border-radius: 0;
-
-  &.notice-streamer-mode {
-    background: rgba($notice-streamer,.8);
-  }
-
-  &.notice-facebook {
-    background: rgba($notice-facebook,.8);
-  }
-
-  &.noticeInfo-3v29SJ {
-    background: rgba($notice-phone,.8);
-  }
 }
+
+// Default Notice
+.noticeDefault-362Ko2 {
+  background: rgba($notice,.8);
+}
+
+// Premium
+.noticePremium-12Zvj9 {
+  background: rgba($notice-premium,.8);
+}
+
+// Information Boxes
+.noticeInfo-3v29SJ, .noticeInfo-3_iTE1 {
+  background: rgba($notice-info,.8);
+}
+
+// Grandfathered Plan
+.noticePremiumGrandfathered-ollUxF {
+  background-image: linear-gradient(270deg, rgba($notice-grandfathered,.8), rgba($notice-grandfathered-2,.8));
+}
+
+// Success
+.noticeSuccess-3Y62ob {
+  background: rgba($notice-success,.8);
+}
+
+// Danger
+.noticeDanger-7u-yT9 {
+  background: rgba($notice-danger,.8);
+}
+
+// Streamer Mode
+.noticeStreamerMode-2TSQpg {
+  background: rgba($notice-streamer,.8);
+}
+
+// Facebook
+.noticeFacebook-3equ5g {
+  background: rgba($notice-facebook,.8);
+}
+
+// Spotify
+.noticeSpotify-27dhr0 {
+  background: rgba($notice-spotify,.8);
+}
+
+// Brand
+.noticeBrand-3nQBC_  {
+  background: rgba($notice-brand,.8);
+}
+
+
 
 // Search Results
 .search-results-wrap {

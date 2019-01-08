@@ -88,15 +88,38 @@ div[class*=scroller]::-webkit-scrollbar-track-piece {
 div[class*=scroller]::-webkit-scrollbar-track {
   background: none !important; }
 
-.notice {
-  background: rgba(242, 101, 34, 0.8);
+.notice-2FJMB4 {
   border-radius: 0; }
-  .notice.notice-streamer-mode {
-    background: rgba(89, 54, 149, 0.8); }
-  .notice.notice-facebook {
-    background: rgba(53, 80, 137, 0.8); }
-  .notice.noticeInfo-3v29SJ {
-    background: rgba(74, 144, 226, 0.8); }
+
+.noticeDefault-362Ko2 {
+  background: rgba(242, 101, 34, 0.8); }
+
+.noticePremium-12Zvj9 {
+  background: rgba(32, 34, 37, 0.8); }
+
+.noticeInfo-3v29SJ, .noticeInfo-3_iTE1 {
+  background: rgba(74, 144, 226, 0.8); }
+
+.noticePremiumGrandfathered-ollUxF {
+  background-image: linear-gradient(270deg, rgba(179, 174, 255, 0.8), rgba(115, 142, 245, 0.8)); }
+
+.noticeSuccess-3Y62ob {
+  background: rgba(67, 181, 129, 0.8); }
+
+.noticeDanger-7u-yT9 {
+  background: rgba(240, 71, 71, 0.8); }
+
+.noticeStreamerMode-2TSQpg {
+  background: rgba(89, 54, 149, 0.8); }
+
+.noticeFacebook-3equ5g {
+  background: rgba(53, 80, 137, 0.8); }
+
+.noticeSpotify-27dhr0 {
+  background: rgba(29, 185, 84, 0.8); }
+
+.noticeBrand-3nQBC_ {
+  background: rgba(114, 137, 218, 0.8); }
 
 .search-results-wrap .channel-separator .channel-name {
   background: none !important; }
@@ -197,6 +220,9 @@ div[class*=scroller]::-webkit-scrollbar-track {
 /**************************************************
   Component: Chat
  **************************************************/
+.theme-light .content-yTz4x3, .theme-light .noChannel-Z1DQK7, .theme-light .chat-3bRxxu, .theme-light .divider-3gKybi, .theme-dark .content-yTz4x3, .theme-dark .noChannel-Z1DQK7, .theme-dark .chat-3bRxxu, .theme-dark .divider-3gKybi {
+  background: none; }
+
 .chat .content div[class*=nsfw-] {
   max-width: 100%; }
 .chat .new-messages-bar {

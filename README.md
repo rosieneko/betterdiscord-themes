@@ -55,6 +55,11 @@ Additional changes to accommodate for small background transparency issues that 
 **Description:** This replaces the default 1-column list for the servers with a 2-column design. For those who like having all of their servers on the screen at once.  
 **URL:** `https://rawgit.com/rosieneko/betterdiscord-themes/master/css/component-serverlist-2col.css`
 
+#### Compact Icons for DM Channel List
+
+**Description:** This replaces the icon and text format of the tabs listed in the DM channel list (e.g., Activity, Library, Store, Friends). This CSS only works with 3-4 tabs available. If you disable the "Show Games Tab" in "Appearance", then this CSS will negatively affect your DMs.  
+**URL:** `https://rawgit.com/rosieneko/betterdiscord-themes/master/css/component-channellist-icons.css`
+
 ## How To Use
 
 To use these themes as they are, you can use the `@import` feature. For example, to import the base theme, you would use:

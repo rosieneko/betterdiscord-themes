@@ -2,6 +2,12 @@
   Component: Chat
  **************************************************/
 
+.theme-light, .theme-dark {
+  .content-yTz4x3, .noChannel-Z1DQK7, .chat-3bRxxu, .divider-3gKybi {
+    background: none;
+  }
+}
+
 .chat {
   .content {
     div[class*=nsfw-] {
