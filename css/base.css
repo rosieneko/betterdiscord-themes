@@ -131,47 +131,49 @@ div[class*=scroller]::-webkit-scrollbar-track {
 /**************************************************
   Component: Default 1-Column Server List
  **************************************************/
-.guilds-wrapper {
+.da-guildsWrapper {
   width: 65px; }
-  .guilds-wrapper .scroller-wrap {
+  .da-guildsWrapper .scroller-wrap {
     width: 85px; }
-  .guilds-wrapper .guild-separator {
+  .da-guildsWrapper .da-guildSeparator {
     width: 45px; }
-  .guilds-wrapper .guilds .guild, .guilds-wrapper .guilds .guild .avatar-small, .guilds-wrapper .guilds .guild .guild-inner a, .guilds-wrapper .guilds-error,
-  .guilds-wrapper .iconSizeLarge-161qtT {
+  .da-guildsWrapper .da-guilds .da-guild,
+  .da-guildsWrapper .da-guilds .da-guild .da-guildIcon,
+  .da-guildsWrapper .da-guilds .da-guild .da-guildInner a,
+  .da-guildsWrapper .da-guildsError {
     line-height: 35px;
     width: 35px;
     height: 35px; }
-  .guilds-wrapper .guilds {
+  .da-guildsWrapper .da-guilds {
     padding: 10px; }
-    .guilds-wrapper .guilds .friends-online {
+    .da-guildsWrapper .da-guilds .da-friendsOnline {
       display: none; }
-    .guilds-wrapper .guilds .dms {
+    .da-guildsWrapper .da-guilds .da-dms {
       margin-top: 0; }
-      .guilds-wrapper .guilds .dms .guild .guild-inner {
+      .da-guildsWrapper .da-guilds .da-dms .da-guild .da-guildInner {
         box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.8); }
-    .guilds-wrapper .guilds .guild {
+    .da-guildsWrapper .da-guilds .da-guild {
       width: 39px;
       height: 39px;
       padding: 3px; }
-      .guilds-wrapper .guilds .guild + .guild {
+      .da-guildsWrapper .da-guilds .da-guild + .da-guild {
         margin-top: 1px !important; }
-      .guilds-wrapper .guilds .guild.guilds-add {
+      .da-guildsWrapper .da-guilds .da-guild.guilds-add {
         margin: 6px 5px 5px 5px;
         padding: 0 !important;
         height: 35px;
         width: 35px; }
-      .guilds-wrapper .guilds .guild:before {
+      .da-guildsWrapper .da-guilds .da-guild:before {
         display: none !important; }
-      .guilds-wrapper .guilds .guild.unread .guild-inner {
+      .da-guildsWrapper .da-guilds .da-guild.unread .da-guildInner {
         border: 2px solid transparent;
         border-radius: 35px !important;
         box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.8); }
-      .guilds-wrapper .guilds .guild.selected .guild-inner {
+      .da-guildsWrapper .da-guilds .da-guild.selected .da-guildInner {
         border: 2px solid white;
         border-radius: 35px !important;
         box-shadow: 0 0 3px 1px white; }
-      .guilds-wrapper .guilds .guild .guild-inner {
+      .da-guildsWrapper .da-guilds .da-guild .da-guildInner {
         background: none;
         background-clip: content-box;
         background-origin: content-box;
@@ -181,21 +183,23 @@ div[class*=scroller]::-webkit-scrollbar-track {
         box-sizing: border-box !important;
         transition: border .25s ease-in-out, box-shadow .25s ease-in-out;
         transition-delay: 0s; }
-      .guilds-wrapper .guilds .guild .avatar-small {
+      .da-guildsWrapper .da-guilds .da-guild .da-guildIcon {
         background-clip: content-box;
         background-origin: content-box;
         background-size: contain; }
-      .guilds-wrapper .guilds .guild .friends-icon {
+      .da-guildsWrapper .da-guilds .da-guild .da-noIcon {
+        font-size: 12px !important; }
+      .da-guildsWrapper .da-guilds .da-guild .friends-icon {
         background-size: 25px 30px;
         height: 35px;
         width: 35px; }
-      .guilds-wrapper .guilds .guild.audio .guild-inner:after, .guilds-wrapper .guilds .guild.video .guild-inner:after {
+      .da-guildsWrapper .da-guilds .da-guild.audio .da-guildInner:after, .da-guildsWrapper .da-guilds .da-guild.video .da-guildInner:after {
         background-size: 12px;
         height: 16px;
         right: 0;
         top: 0;
         width: 16px; }
-      .guilds-wrapper .guilds .guild .badge {
+      .da-guildsWrapper .da-guilds .da-guild .badge {
         bottom: 0;
         right: 0; }
 

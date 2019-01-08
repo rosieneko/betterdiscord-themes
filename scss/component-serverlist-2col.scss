@@ -11,24 +11,24 @@
 
 @import 'variables/_base';
 
-.guilds-wrapper {
+.da-guildsWrapper {
   width: $size-guild * 2 + 45px;
 
   .scroller-wrap {
     width: $size-guild * 2 + 60px;
   }
 
-  .guild-separator {
+  .da-guildSeparator {
     width: 100%;
   }
 
-  .guilds {
+  .da-guilds {
     text-align: center;
 
-    .guild {
+    .da-guild {
       display: inline-flex;
 
-      &.guilds-add {
+      &.da-guildsAdd {
         display: block;
         margin: 8px auto 0 auto !important;
       }

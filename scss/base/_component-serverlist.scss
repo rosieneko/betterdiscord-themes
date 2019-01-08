@@ -2,46 +2,48 @@
   Component: Default 1-Column Server List
  **************************************************/
 
-.guilds-wrapper {
+.da-guildsWrapper {
   width: $size-guild + 30px;
 
   .scroller-wrap {
     width: $size-guild + 50px;
   }
 
-  .guild-separator {
+  .da-guildSeparator {
     width: $size-guild + 10px;
   }
 
   // Overriding the default width and height in one go.
-  .guilds .guild, .guilds .guild .avatar-small, .guilds .guild .guild-inner a, .guilds-error,
-  .iconSizeLarge-161qtT {
+  .da-guilds .da-guild,
+  .da-guilds .da-guild .da-guildIcon,
+  .da-guilds .da-guild .da-guildInner a,
+  .da-guildsError {
     line-height: $size-guild;
     width: $size-guild;
     height: $size-guild;
   }
 
-  .guilds {
+  .da-guilds {
     padding: 10px;
 
-    .friends-online {
+    .da-friendsOnline {
       display: none;
     }
 
-    .dms {
+    .da-dms {
       margin-top: 0;
 
-      .guild .guild-inner {
+      .da-guild .da-guildInner {
         box-shadow: $boxshadow-guild rgba($white,.8);
       }
     }
 
-    .guild {
+    .da-guild {
       width: $size-guild + 4px;
       height: $size-guild + 4px;
       padding: 3px;
 
-      +.guild {
+      +.da-guild {
         margin-top: 1px !important;
       }
 
@@ -57,7 +59,7 @@
       }
 
       &.unread {
-        .guild-inner {
+        .da-guildInner {
           border: $border-guild transparent;
           border-radius: $size-guild !important;
           box-shadow: $boxshadow-guild rgba($white,.8);
@@ -65,14 +67,14 @@
       }
 
       &.selected {
-        .guild-inner {
+        .da-guildInner {
           border: $border-guild rgba($white, 1);
           border-radius: $size-guild !important;
           box-shadow: $boxshadow-guild rgba($white,1);
         }
       }
 
-      .guild-inner {
+      .da-guildInner {
         background: none;
         background-clip: content-box;
         background-origin: content-box;
@@ -84,10 +86,14 @@
         transition-delay: 0s;
       }
 
-      .avatar-small {
+      .da-guildIcon {
         background-clip: content-box;
         background-origin: content-box;
         background-size: contain;
+      }
+
+      .da-noIcon {
+        font-size: 12px!important;
       }
 
       .friends-icon {
@@ -96,7 +102,7 @@
         width: $size-guild;
       }
 
-      &.audio .guild-inner:after, &.video .guild-inner:after {
+      &.audio .da-guildInner:after, &.video .da-guildInner:after {
         background-size: 12px;
         height: 16px;
         right: 0;
