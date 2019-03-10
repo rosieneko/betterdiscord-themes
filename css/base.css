@@ -158,18 +158,18 @@ div[class*=scroller]::-webkit-scrollbar-track {
       padding: 3px; }
       .da-guildsWrapper .da-guilds .da-guild + .da-guild {
         margin-top: 1px !important; }
-      .da-guildsWrapper .da-guilds .da-guild.guilds-add {
+      .da-guildsWrapper .da-guilds .da-guild.da-guildsAdd {
         margin: 6px 5px 5px 5px;
         padding: 0 !important;
         height: 35px;
         width: 35px; }
       .da-guildsWrapper .da-guilds .da-guild:before {
         display: none !important; }
-      .da-guildsWrapper .da-guilds .da-guild.unread .da-guildInner {
+      .da-guildsWrapper .da-guilds .da-guild.da-unread .da-guildInner {
         border: 2px solid transparent;
         border-radius: 35px !important;
         box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.8); }
-      .da-guildsWrapper .da-guilds .da-guild.selected .da-guildInner {
+      .da-guildsWrapper .da-guilds .da-guild.da-selected .da-guildInner {
         border: 2px solid white;
         border-radius: 35px !important;
         box-shadow: 0 0 3px 1px white; }

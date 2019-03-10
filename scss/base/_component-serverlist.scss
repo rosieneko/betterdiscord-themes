@@ -47,7 +47,7 @@
         margin-top: 1px !important;
       }
 
-      &.guilds-add {
+      &.da-guildsAdd {
         margin: 6px 5px 5px 5px;
         padding: 0 !important;
         height: $size-guild;
@@ -58,7 +58,7 @@
         display: none !important;
       }
 
-      &.unread {
+      &.da-unread {
         .da-guildInner {
           border: $border-guild transparent;
           border-radius: $size-guild !important;
@@ -66,7 +66,7 @@
         }
       }
 
-      &.selected {
+      &.da-selected {
         .da-guildInner {
           border: $border-guild rgba($white, 1);
           border-radius: $size-guild !important;
