@@ -11,27 +11,27 @@
 
 @import 'variables/_base';
 
-.wrapper-1Rf91z {
+.da-guildsWrapper {
   width: $size-guild * 2 + 45px;
 
-  .scrollerWrap-2lJEkd {
+  .scroller-wrap {
     width: $size-guild * 2 + 60px;
   }
 
-  .guildSeparator-3s64Iy {
+  .da-guildSeparator {
     width: 100%;
   }
 
-  .wrapper-2lTRaf {
+  .da-guilds {
     text-align: center;
 
-    .guildIcon-VlWW86 {
+    .da-guild {
       display: inline-flex;
-    }
-    
-    .circleIconButton-jET_ig {
-      display: block;
-      margin: 8px auto 0 auto !important;
+
+      &.da-guildsAdd {
+        display: block;
+        margin: 8px auto 0 auto !important;
+      }
     }
   }
 }

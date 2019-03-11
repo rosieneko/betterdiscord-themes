@@ -8,18 +8,16 @@
   base theme CSS URL and the main theme. Read the
   README.md for more information.
  **************************************************/
-.da-guildsWrapper {
+.wrapper-1Rf91z {
   width: 115px; }
-  .da-guildsWrapper .scroller-wrap {
+  .wrapper-1Rf91z .scrollerWrap-2lJEkd {
     width: 130px; }
-  .da-guildsWrapper .da-guildSeparator {
+  .wrapper-1Rf91z .guildSeparator-3s64Iy {
     width: 100%; }
-  .da-guildsWrapper .da-guilds {
+  .wrapper-1Rf91z .wrapper-2lTRaf {
     text-align: center; }
-    .da-guildsWrapper .da-guilds .da-guild {
+    .wrapper-1Rf91z .wrapper-2lTRaf .guildIcon-VlWW86 {
       display: inline-flex; }
-      .da-guildsWrapper .da-guilds .da-guild.da-guildsAdd {
-        display: block;
-        margin: 8px auto 0 auto !important; }
-
-/*# sourceMappingURL=component-serverlist-2col.css.map */
+    .wrapper-1Rf91z .wrapper-2lTRaf .circleIconButton-jET_ig {
+      display: block;
+      margin: 8px auto 0 auto !important; }

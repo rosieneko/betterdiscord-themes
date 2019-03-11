@@ -8,7 +8,9 @@
   base theme CSS URL and the main theme. Read the
   README.md for more information.
  **************************************************/
- 
+
+@import 'variables/_base';
+
 div.scroller-2FKFPG {
     div.channel-2QD9_O:nth-child(-n + 5) {
         box-sizing: border-box;

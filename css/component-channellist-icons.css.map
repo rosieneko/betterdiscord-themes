@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA;;;;;;;;;oDASoD;AAKhD,wDAAqC;EACjC,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,YAAY;EACrB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,KAAK,EAAE,GAAG;EAEV,0DAAE;IACE,MAAM,EAAE,OAAO;IAEf,iFAAuB;MACnB,MAAM,EAAE,MAAM;IAGlB,uEAAa;MACT,OAAO,EAAE,IAAI",
-"sources": ["../scss/component-channellist-icons.scss"],
-"names": [],
-"file": "component-channellist-icons.css"
-}

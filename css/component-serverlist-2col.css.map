@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA;;;;;;;;;oDASoD;AAIpD,iBAAkB;EAChB,KAAK,EAAE,KAAsB;EAE7B,gCAAe;IACb,KAAK,EAAE,KAAsB;EAG/B,oCAAmB;IACjB,KAAK,EAAE,IAAI;EAGb,4BAAW;IACT,UAAU,EAAE,MAAM;IAElB,sCAAU;MACR,OAAO,EAAE,WAAW;MAEpB,mDAAe;QACb,OAAO,EAAE,KAAK;QACd,MAAM,EAAE,0BAA0B",
-"sources": ["../scss/component-serverlist-2col.scss"],
-"names": [],
-"file": "component-serverlist-2col.css"
-}
